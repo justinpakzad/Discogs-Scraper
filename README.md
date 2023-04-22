@@ -1,6 +1,7 @@
 # Discogs Scraper
 
-Discogs Scraper is a web scraper built using Python and Scrapy to scrape release data from Discogs.com. It allows you to specify sorting, release format, genre, and style, and it outputs the data in CSV or JSON format.
+Discogs Scraper is a web scraper built using Python and Scrapy to scrape release data from [Discogs.com](https://www.discogs.com/)
+. It allows you to specify sorting, release format, genre, and style, and it outputs the data in CSV or JSON format.
 
 ## Features
 
@@ -9,7 +10,6 @@ Discogs Scraper is a web scraper built using Python and Scrapy to scrape release
 - Limit the number of pages to scrape
 - Export data to CSV or JSON format
 - Output includes:
-
   - Artist
   - Title
   - Label
@@ -27,18 +27,18 @@ Discogs Scraper is a web scraper built using Python and Scrapy to scrape release
   - Highest sold price
 
 ## Installation
-
 1. Clone the repository:
-
 ```
-git clone https://github.com/yourusername/discogs-scraper.git
+git clone https://github.com/justinpakzad/discogs-scraper.git
 ```
 2. Install required dependencies:
 ```cd discogs-scraper
 pip install -r requirements.txt
 ```
 ## Usage
-Run the scraper with the following command:
+1. Navigate to the spiders folder
+
+2. Run the scraper with the following command:
 ```
 python discogs_scraper.py [OPTIONS]
 ```
@@ -50,7 +50,7 @@ python discogs_scraper.py [OPTIONS]
 | -f, --format | Release format (default: Vinyl) |
 | -g, --genre | Release genre (default: Electronic) |
 | -s, --style | Release style (default: Electro) |
-| -l, --limit | Limit the number of pages to scrape (default: 100) |
+| -l, --limit | Limit the number of pages to scrape (default: 10) |
 | -o, --output | Output format (choices: csv, json; default: csv) |
 
 

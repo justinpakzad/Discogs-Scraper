@@ -8,7 +8,7 @@ class DiscogsScraper(scrapy.Spider):
     custom_settings = {
     'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36'}
 
-    def __init__(self,sort='want',rel_format='Vinyl',genre='Electronic',style='Electro',limit=100,*args, **kwargs):
+    def __init__(self,sort='want',rel_format='Vinyl',genre='Electronic',style='Electro',limit=10,*args, **kwargs):
         super(DiscogsScraper, self).__init__(*args, **kwargs)
         self.start_urls = [f'{self.base_url}/search/?sort={sort}%2Cdesc&genre_exact={genre}&style_exact={style}&format_exact={rel_format}&type=release']
         self.scraped_urls = set()
@@ -102,7 +102,7 @@ if __name__ == "__main__":
     parser.add_argument('-f','--format',type=str,default='Vinyl',help='Release format (default: Vinyl)')
     parser.add_argument('-g','--genre',type=str,default='Electronic',help='Release genre (default: Electronic)')
     parser.add_argument('-s','--style',type=str,default='Electro',help='Release style (default: Electro)')
-    parser.add_argument('-l', '--limit', type=int, default=100, help='Limit the number of pages to scrape (default: 100)')
+    parser.add_argument('-l', '--limit', type=int, default=10, help='Limit the number of pages to scrape (default: 10)')
     parser.add_argument('-o', '--output', type=str, default='csv', choices=['csv', 'json'], help='Output format: csv or json (default: csv)')
 
 
