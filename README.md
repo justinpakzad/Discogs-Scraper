@@ -44,6 +44,7 @@ python discogs_scraper.py [OPTIONS]
 ```
 
 ## Command Line Options
+| Option | Description |
 | --- | --- |
 | -so, --sort | Sort format (choices: hot, most wanted, most collected; default: most wanted) |
 | -f, --format | Release format (default: Vinyl) |
@@ -51,6 +52,7 @@ python discogs_scraper.py [OPTIONS]
 | -s, --style | Release style (default: Electro) |
 | -l, --limit | Limit the number of pages to scrape (default: 100) |
 | -o, --output | Output format (choices: csv, json; default: csv) |
+
 
 
 ## Example usage:
