@@ -9,6 +9,7 @@ Discogs Scraper is a web scraper built using Python and Scrapy to scrape release
 - Limit the number of pages to scrape
 - Export data to CSV or JSON format
 - Output includes:
+
   - Artist
   - Title
   - Label
@@ -43,12 +44,14 @@ python discogs_scraper.py [OPTIONS]
 ```
 
 ## Command Line Options
-- -so, --sort: Sort format (choices: hot, most wanted, most collected; default: most wanted)
-- -f, --format: Release format (default: Vinyl)
-- -g, --genre: Release genre (default: Electronic)
-- -s, --style: Release style (default: Electro)
-- -l, --limit: Limit the number of pages to scrape (default: 100)
-- -o, --output: Output format (choices: csv, json; default: csv)
+| --- | --- |
+| -so, --sort | Sort format (choices: hot, most wanted, most collected; default: most wanted) |
+| -f, --format | Release format (default: Vinyl) |
+| -g, --genre | Release genre (default: Electronic) |
+| -s, --style | Release style (default: Electro) |
+| -l, --limit | Limit the number of pages to scrape (default: 100) |
+| -o, --output | Output format (choices: csv, json; default: csv) |
+
 
 ## Example usage:
 ```
